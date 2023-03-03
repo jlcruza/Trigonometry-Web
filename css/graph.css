@@ -1,0 +1,31 @@
+#header-section{
+    height: 10vh !important;
+}
+
+#graph-grid{
+    height: 65vh !important;
+    margin-bottom: 5vh;
+}
+
+#graph-area{
+    position: relative;
+    overflow: overlay;
+    z-index: 0;
+    height: 60vh !important;
+    width: 60vh !important;
+    margin: auto;
+    display: block;
+}
+
+#equation-area{
+    height: 10vh !important;
+}
+
+#equation-text{
+    font-size: x-large; 
+    text-align: center;
+}
+
+#description-area{
+    margin-right: 40px;
+}

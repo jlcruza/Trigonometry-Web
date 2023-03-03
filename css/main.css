@@ -1,0 +1,67 @@
+
+#graph-grid{
+    height: 30vh !important;
+}
+
+#description-area{
+    height: 35vh !important;
+    padding: 30px;
+    padding-top: 5vh;
+}
+
+#navigation-area{
+    height: 5vh !important;
+    padding-top: 3vh;
+}
+
+#graph-area{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    height: 30vh !important;
+    width: 30vh !important;
+    margin: auto;
+    display: block;
+}
+
+.arrows-left{
+    height: 20%;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.arrows-right{
+    height: 20%;
+    position: relative;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.center-img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#learn-button{
+    background-color: white;
+}
+
+#recip-button{
+    background-color: transparent;
+    border: 1px white solid;
+}
+
+.active-badge{
+    font-size: small;
+    background-color: white;
+}
+
+.inactive-badge{
+    font-size: xx-small;
+    background-color: #e6ffffff;
+}

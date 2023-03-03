@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+label, h1, h2, h3, h4, h5, h6, p{
+    color: #333335; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+.white-text{
+    color: white;
+}
+
+.dark-text{
+    color: #333335;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.green-text{
+    color: #116757;
+}
+
+.purple-text{
+    color: #2b4ca8
+}
+
+.white-background{
+    background-color: white;
+}
+
+.green-background{
+    /* https://gradient.shapefactory.co/?a=063841&b=00D082&d=25 */
+    background-image: linear-gradient(25deg, #063841, #116757, #139a6c, #00d082)
+}
+
+.purple-background{
+    /* https://gradient.shapefactory.co/?a=000281&b=00D3F7&d=25 */
+    background-image: linear-gradient(25deg, #000281, #2b4ca8, #318ecf, #00d3f7)
+}
+
+#header-section{
+    padding-top: 30px;
+    padding-left: 40px;
+    height: 20vh !important;
+}
+
+#footer-text{
+    height: 10vh !important;
+}
+
+#credit-text{
+    text-align: center;
+}

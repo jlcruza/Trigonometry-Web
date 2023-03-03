@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trigonometría Web</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"/>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+            
+        <link rel="stylesheet" type="text/css" href="./css/global.css" />
+        <link rel="stylesheet" type="text/css" href="./css/createPlane.css" />
+        <link rel="stylesheet" type="text/css" href="./css/graph.css" />
+
+        <!-- Math Jax -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+    </head>
+
+    <body class="green-background">
+
+        <div id="header-section">
+            <h3 class="white-text bold-text">Funciones Trigonométricas</h3>
+        </div>
+
+        <!-- Equation -->
+        <div id="equation-area">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <p id="equation-text" class="white-text">
+                        \(f(x) = sin{(x)}\)</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Gaph -->
+        <div id="graph-grid">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div id="graph-area"></div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div id="description-area" style="height: 60vh;">
+                        <div class="card" style="height: 60vh;">
+                            <div class="card-body">
+                                <h5 class="card-title">Función Seno</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">&nbsp;</h6>
+                                <p class="card-text">
+                                    Presione [Space Bar] para comenzar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-text">
+            <div class="row">
+                <div class="col-12">
+                    <div id="credit-text">
+                        <p class="white-text">
+                            Proyecto: Dra. Olga Lucía Quintero Fonseca
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Local -->
+        <script type="text/javascript" src="./js/createPlane.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
