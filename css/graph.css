@@ -3,8 +3,14 @@
 }
 
 #graph-grid{
-    height: 65vh !important;
-    margin-bottom: 5vh;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+#graph-cell{
+    height: 95vh;
+    margin-top: 15%;
 }
 
 #graph-area{
@@ -14,7 +20,9 @@
     height: 60vh !important;
     width: 60vh !important;
     margin: auto;
-    display: block;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
 }
 
 #equation-area{
@@ -22,10 +30,19 @@
 }
 
 #equation-text{
-    font-size: x-large; 
+    font-size: xx-large; 
     text-align: center;
 }
 
 #description-area{
-    margin-right: 40px;
+    margin: 20px;
+    margin-top: 20vh;
+}
+
+.white-background{
+    background-color: white;
+}
+
+.custom-card-footer{
+    border-top: none;
 }

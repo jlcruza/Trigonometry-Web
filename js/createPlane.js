@@ -3,8 +3,8 @@ const graphArea = document.getElementById("graph-area");
 
 // Graph Configurations
 const element = "DIV";
-const axisColor = "#BFFFFFFF";
-const lines = "#D9FAFAFA";
+const axisColor = "#616161";
+const lines = "#c2c2c2";
 const fullSize = "100%";
 const axisThickness = "2px"
 const thickness = "1px";
@@ -73,14 +73,15 @@ for (let i = -horizontalLines; i < horizontalLines + 1; i++) {
 
 
 
-// Add vertical lines
+// Add vertical labels
 for (let i = -verticalLines; i < verticalLines + 1; i++) {
 
     if (i != 0) {
         let vertical = document.createElement("LABEL");
         vertical.classList.add("line-position");
         vertical.classList.add("origin-horizontal");
-        vertical.classList.add("white-text");
+        vertical.classList.add("dark-text");
+        vertical.classList.add("no-word-wrap");
         vertical.style.top = "51%";
         vertical.innerHTML = getRadian(i);
 
@@ -90,14 +91,15 @@ for (let i = -verticalLines; i < verticalLines + 1; i++) {
 
 }
 
-// Add horizontal lines
+// Add horizontal labels
 for (let i = -horizontalLines; i < horizontalLines + 1; i++) {
 
     if (i != 0) {
         let horizontal = document.createElement("LABEL");
         horizontal.classList.add("line-position");
         horizontal.classList.add("origin-vertical");
-        horizontal.classList.add("white-text");
+        horizontal.classList.add("dark-text");
+        horizontal.classList.add("no-word-wrap");
         horizontal.style.left = "53%";
         horizontal.innerHTML = -i;
 
@@ -110,10 +112,19 @@ for (let i = -horizontalLines; i < horizontalLines + 1; i++) {
 function getRadian(i){
     if(i % 2 == 0){
         let half = i/2;
-        return half + "π";
+        return getNumber(half) + "π";
     } else{
-        return i + "π/2";
+        return getNumber(i) + "π/2";
     }
+}
+
+function getNumber(num){
+    if(num == 1)
+        return "";
+    else if(num == -1)
+        return "-"
+    else
+        return num;
 }
 
 

@@ -33,3 +33,7 @@
 .small-text{
     font-size: x-small;
 }
+
+.no-word-wrap{
+    overflow-wrap: normal;
+}

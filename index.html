@@ -8,70 +8,121 @@
             rel="stylesheet"
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
             crossorigin="anonymous"/>
-            
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-            
-            <link rel="stylesheet" type="text/css" href="./css/global.css" />
-            <link rel="stylesheet" type="text/css" href="./css/createPlane.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./css/global.css" />
+        <link rel="stylesheet" type="text/css" href="./css/createPlane.css" />
         <link rel="stylesheet" type="text/css" href="./css/main.css" />
     </head>
 
     <body class="green-background">
 
         <div id="header-section">
-            <h3 class="white-text bold-text">Funciones Trigonométricas</h3>
         </div>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div>
+                <button class="navbar-toggler sm-mg-left" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <a class="navbar-brand sm-mg-left" href="#">Funciones Trigonométricas</a>
+              
+              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title white-text" id="offcanvasDarkNavbarLabel">Escoje la función a aprender</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Seno</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Coseno</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tangente</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Cosecante</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Secante</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Cotangente</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+
 
         <!-- Gaph -->
         <div id="graph-grid">
             <div class="row">
-                <div class="col-1 col-lg-4">
-                    <img class="arrows-left" src="./images/left.svg"/>
+                <div class="col-1">
                 </div>
-                <div class="col-10 col-lg-4">
-                    <div id="graph-area">
+                <div class="col-10">
+                    <div id="card-holder">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div class="hg-5"></div>
+                                            <div id="graph-area"></div>
+                                            <div id="title-area">
+                                                <h1 class="center-text bold-text">Seno</h1>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            
+                                            <!-- Description -->
+                                            <div class="hg-5"></div>
+                                            <div id="description-area">
+                                                <h3 class="dark-text bold-text">Información</h3>
+                                                        <p id="func-description" class="dark-text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                                                            dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Vitae justo eget magna 
+                                                            fermentum iaculis eu. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Id donec ultrices tincidunt 
+                                                            arcu non sodales neque. Consectetur purus ut faucibus pulvinar elementum integer. Facilisi etiam dignissim 
+                                                            diam quis enim lobortis scelerisque fermentum. 
+                                                        </p>
+                                                        <button
+                                                            class="btn btn-lg white-text sunny-background">Aprender
+                                                            más ➤</button>
+                                                        <button
+                                                            class="btn btn-lg
+                                                            green-text green-border">Ver
+                                                            Función Recíproca</button>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-1 col-lg-4">
-                    <img class="arrows-right" src="./images/right.svg"/>
+                <div class="col-1">
                 </div>
             </div>
         </div>
 
-        <div id="navigation-area">
-            <div class="row">
-                <div class="col-1 col-md-4"></div>
-                <div class="col-10 col-md-4">
-                    <div class="center-img" style="text-align: center">
-                        <span class="badge green-text active-badge">▲</span>
-                        <span class="badge green-text inactive-badge">-</span>
-                        <span class="badge green-text inactive-badge">-</span>
-                    </div>
-                </div>
-                <div class="col-1 col-md-4"></div>
-            </div>    
-        </div>
 
-        <!-- Description -->
-        <div id="description-area">
-            <div class="row">
-                <div class="col-1 col-md-4"></div>
-                <div class="col-10 col-md-4">
-                    <h3 class="white-text bold-text">Seno</h3>
-                    <p class="white-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam
-                    </p>
-                    <button id="learn-button" class="btn btn-lg green-text">Aprender más ➤</button>
-                    <button id="recip-button" class="btn btn-lg white-text">Ver Función Recíproca</button>
-                </div>
-                <div class="col-1 col-md-4"></div>
-            </div>    
-        </div>
 
         <div id="footer-text">
             <div class="row">
