@@ -1,0 +1,39 @@
+
+#graph-grid{
+    height: 70vh !important;
+    min-height: 70vh !important;
+    max-height: 70vh !important;
+}
+
+#graph-area{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    height: 30vh !important;
+    width: 30vh !important;
+    margin: auto;
+    display: block;
+}
+
+#title-area{
+    padding-top: 30px;
+    height: 100% !important;
+}
+
+.active-badge{
+    font-size: small;
+    background-color: white;
+}
+
+.inactive-badge{
+    font-size: xx-small;
+    background-color: #e6ffffff;
+}
+
+#func-description{
+    line-height: 1.8;
+    margin-bottom: 40px;
+    padding-right: 10%;
+    text-align: justify;
+    text-justify: inter-word;
+}

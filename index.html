@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Trigonometría Web</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./css/global.css" />
+        <link rel="stylesheet" type="text/css" href="./css/createPlane.css" />
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    </head>
+
+    <body class="green-background">
+
+        <div id="header-section">
+        </div>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div>
+                <button class="navbar-toggler sm-mg-left" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <a class="navbar-brand sm-mg-left" href="#">Funciones Trigonométricas</a>
+              
+              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title white-text" id="offcanvasDarkNavbarLabel">Escoje la función a aprender</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link white-text" href="./index.html?type=sin">Seno</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link white-text" href="./index.html?type=cos">Coseno</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link white-text" href="./index.html?type=tan">Tangente</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link white-text" href="./index.html?type=csc">Cosecante</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link white-text" href="./index.html?type=sec">Secante</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link white-text" href="./index.html?type=cot">Cotangente</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+
+
+        <!-- Gaph -->
+        <div id="graph-grid">
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-10">
+                    <div id="card-holder">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div class="hg-5"></div>
+                                            <div id="graph-area"></div>
+                                            <div id="title-area">
+                                                <h1 id="func-name" class="center-text bold-text">Seno</h1>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            
+                                            <!-- Description -->
+                                            <div class="hg-5"></div>
+                                            <div id="description-area">
+                                                <h3 class="dark-text bold-text">Información</h3>
+                                                        <p id="func-description" class="dark-text">
+                                                             
+                                                        </p>
+                                                        <button id="learn-more-button"
+                                                            class="btn btn-lg white-text sunny-background">Aprender
+                                                            más ➤</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="footer-text">
+            <div class="row">
+                <div class="col-12">
+                    <div id="credit-text">
+                        <p class="white-text">
+                            Proyecto: Dra. Olga Lucía Quintero Fonseca
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Math Jax -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!-- Local -->
+        <script type="text/javascript" src="./js/constants.js"></script>
+        <script type="text/javascript" src="./js/sharedFunctions.js"></script>
+        <script type="text/javascript" src="./js/createSmallPlane.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <script type="text/javascript" src="./js/Resources/mainDescriptions.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

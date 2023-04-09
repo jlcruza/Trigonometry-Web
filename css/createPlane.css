@@ -1,0 +1,39 @@
+
+
+.origin-vertical {
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}
+
+.origin-horizontal {
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+
+.dot-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    
+}
+
+.block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-position{
+    position: absolute;
+}
+
+.small-text{
+    font-size: x-small;
+}
+
+.no-word-wrap{
+    overflow-wrap: normal;
+}

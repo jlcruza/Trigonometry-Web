@@ -1,0 +1,63 @@
+#header-section {
+    height: 10vh !important;
+}
+
+#graph-grid {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+#graph-cell {
+    margin-top: 15%;
+}
+
+#graph-area {
+    position: relative;
+    overflow: overlay;
+    z-index: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.square {
+    position: relative;
+    width: 50%;
+}
+
+.square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.content {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+
+
+#equation-area {
+    height: 10vh !important;
+}
+
+#equation-text {
+    font-size: xx-large;
+    text-align: center;
+}
+
+#description-area {
+    margin: 20px;
+    margin-top: 20vh;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.custom-card-footer {
+    border-top: none;
+}
