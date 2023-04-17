@@ -23,3 +23,10 @@ const axisThickness = "2px"
 const thickness = "1px";
 const verticalLines = 4;
 const horizontalLines = 4;
+
+// Dots Configurations
+const size = "10px";
+const color = "#ff0000";
+const asymptote = "#fd6a02";
+const zIndex = 5;
+const steps = 0.01;

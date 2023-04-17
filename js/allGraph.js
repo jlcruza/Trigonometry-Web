@@ -27,14 +27,17 @@ function moveDotVertically(spaces) {
 
 function moveDotHorizontally(spaces) {
 
-    const width = graphArea.offsetWidth * .9;
-    const half = width / 2;
+    const width = graphArea.offsetWidth * 0.38;
 
-    return ((half / verticalLines) * spaces) + "px";
+    let result = (((width / verticalLines) * spaces)/2)
+
+    let offset = graphArea.offsetWidth * 0.33; 
+
+    return  (result + offset) + "px";
 }
 
-function slope(x) {
-    let m = (excercise(x + a) - excercise(x)) / a;
+function slope(x, excercise) {
+    let m = (excercise(x + steps) - excercise(x)) / steps;
 
     return m;
 }
@@ -44,19 +47,14 @@ function slope(x) {
  */
 let dots = [];
 let graph = [];
-// Dots Configurations
-//const element = "DIV";
-const size = "10px";
-const color = "#ff0000";
-const asymptote = "#fd6a02";
-const z = 5;
-const a = 0.01;
+
+
 
 function placePoints(points) {
     for (let i = 0; i < points; i++) {
 
         let container = document.createElement(element);
-        container.style.zIndex = z;
+        container.style.zIndex = zIndex;
         container.classList.add("line-position");
         container.classList.add("origin-vertical");
         container.style.left = 0;
@@ -76,11 +74,11 @@ function placePoints(points) {
 }
 
 
-function MakeGraph() {
-    for (let i = -3; i < 3; i = i + a) {
+function MakeGraph(excercise) {
+    for (let i = 0; i < 2 * Math.PI; i = i + steps) {
 
         let container = document.createElement(element);
-        container.style.zIndex = z;
+        container.style.zIndex = zIndex;
         container.classList.add("line-position");
         container.classList.add("origin-vertical");
         container.style.left = 0;
@@ -89,6 +87,7 @@ function MakeGraph() {
         dot.style.width = "3px";
         dot.style.height = "3px";
         dot.style.backgroundColor = color;
+        dot.style.position = "relative";
         dot.classList.add("block");
         dot.classList.add("line-position");
         dot.classList.add("origin-horizontal");
@@ -98,11 +97,11 @@ function MakeGraph() {
         dot.style.marginLeft = moveDotHorizontally(i);
 
         // Code for Safari
-        dot.style.WebkitTransform = "rotate(-" + Math.atan(slope(i)) + "deg)";
+        dot.style.WebkitTransform = "rotate(-" + Math.atan(slope(i, excercise)) + "deg)";
         // Code for IE9
-        dot.style.msTransform = "rotate(-" + Math.atan(slope(i)) + "deg)";
+        dot.style.msTransform = "rotate(-" + Math.atan(slope(i, excercise)) + "deg)";
         // Standard syntax
-        dot.style.transform = "rotate(-" + Math.atan(slope(i)) + "deg)";
+        dot.style.transform = "rotate(-" + Math.atan(slope(i, excercise)) + "deg)";
 
         container.appendChild(dot)
         graph.push(container);
@@ -112,10 +111,10 @@ function MakeGraph() {
 
 
 function MakeAsymptote(f) {
-    for (let i = -3; i < 3; i = i + a) {
+    for (let i = -3; i < 3; i = i + steps) {
 
         let container = document.createElement(element);
-        container.style.zIndex = z + 1;
+        container.style.zIndex = zIndex + 1;
         container.classList.add("line-position");
         container.classList.add("origin-vertical");
         container.style.left = 0;
@@ -141,7 +140,7 @@ function MakeAsymptote(f) {
 function MakeVerticalAsymptote(x) {
 
     let container = document.createElement(element);
-    container.style.zIndex = z + 1;
+    container.style.zIndex = zIndex + 1;
     container.classList.add("line-position");
     container.classList.add("origin-vertical");
     container.style.left = 0;
