@@ -51,7 +51,11 @@
 
 #description-area {
     margin: 20px;
-    margin-top: 20vh;
+    margin-top: 20%;
+}
+
+.card-size{
+    height: 70%;
 }
 
 .white-background {

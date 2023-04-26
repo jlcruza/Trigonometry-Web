@@ -70,6 +70,7 @@ for (let i = -verticalLines; i < verticalLines + 1; i++) {
         vertical.classList.add("line-position");
         vertical.classList.add("origin-horizontal");
         vertical.classList.add("dark-text");
+        vertical.classList.add("big-graph-text");
         vertical.classList.add("no-word-wrap");
         vertical.style.top = "51%";
         vertical.innerHTML = getRadian(i);
@@ -87,6 +88,7 @@ for (let i = -horizontalLines; i < horizontalLines + 1; i++) {
         let horizontal = document.createElement("LABEL");
         horizontal.classList.add("line-position");
         horizontal.classList.add("origin-vertical");
+        vertical.classList.add("big-graph-text");
         horizontal.classList.add("dark-text");
         horizontal.classList.add("no-word-wrap");
         horizontal.style.left = "53%";
