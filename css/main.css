@@ -26,20 +26,22 @@
     background-color: #e6ffffff;
 }
 
-#func-description{
-    line-height: 1.8;
-    margin-bottom: 40px;
-    padding-right: 10%;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
 /* For Mobile */
 @media (max-width: 992px) {
     #graph-grid{
         height: 87vh !important;
         min-height: 87vh !important;
         max-height: 87vh !important;
+    }
+
+    #func-description{
+        line-height: 1.8;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+        text-justify: inter-word;
+        overflow-y: scroll;
+        max-height: 20vh;
     }
 }
 
@@ -49,5 +51,14 @@
         height: 70vh !important;
         min-height: 70vh !important;
         max-height: 70vh !important;
+    }
+
+    #func-description{
+        line-height: 1.8;
+        margin-bottom: 40px;
+        padding-right: 10%;
+        text-align: justify;
+        text-justify: inter-word;
+        overflow-y: scroll;
     }
 }

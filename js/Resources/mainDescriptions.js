@@ -4,7 +4,8 @@ function sineInformation() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et' +
             ' dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Vitae justo eget magna' +
             ' fermentum iaculis eu. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Id donec ultrices tincidunt' +
-            ' arcu non sodales neque.'
+            ' arcu non sodales neque. Consectetur purus ut faucibus pulvinar elementum integer. Facilisi etiam dignissim' +
+            ' diam quis enim lobortis scelerisque fermentum.'
     };
 }
 
@@ -14,7 +15,8 @@ function cosineInformation() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et' +
             ' dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Vitae justo eget magna' +
             ' fermentum iaculis eu. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Id donec ultrices tincidunt' +
-            ' arcu non sodales neque.'
+            ' arcu non sodales neque. Consectetur purus ut faucibus pulvinar elementum integer. Facilisi etiam dignissim' +
+            ' diam quis enim lobortis scelerisque fermentum.'
     };
 }
 
@@ -24,7 +26,8 @@ function tangentInformation() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et' +
             ' dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Vitae justo eget magna' +
             ' fermentum iaculis eu. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Id donec ultrices tincidunt' +
-            ' arcu non sodales neque.'
+            ' arcu non sodales neque. Consectetur purus ut faucibus pulvinar elementum integer. Facilisi etiam dignissim' +
+            ' diam quis enim lobortis scelerisque fermentum.'
     };
 }
 
@@ -34,7 +37,8 @@ function cosecantInformation() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et' +
             ' dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Vitae justo eget magna' +
             ' fermentum iaculis eu. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Id donec ultrices tincidunt' +
-            ' arcu non sodales neque.'
+            ' arcu non sodales neque. Consectetur purus ut faucibus pulvinar elementum integer. Facilisi etiam dignissim' +
+            ' diam quis enim lobortis scelerisque fermentum.'
     };
 }
 
@@ -44,7 +48,8 @@ function secantInformation() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et' +
             ' dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Vitae justo eget magna' +
             ' fermentum iaculis eu. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Id donec ultrices tincidunt' +
-            ' arcu non sodales neque.'
+            ' arcu non sodales neque. Consectetur purus ut faucibus pulvinar elementum integer. Facilisi etiam dignissim' +
+            ' diam quis enim lobortis scelerisque fermentum.'
     };
 }
 
@@ -54,7 +59,8 @@ function cotangentInformation() {
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et' +
             ' dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Vitae justo eget magna' +
             ' fermentum iaculis eu. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Id donec ultrices tincidunt' +
-            ' arcu non sodales neque.'
+            ' arcu non sodales neque. Consectetur purus ut faucibus pulvinar elementum integer. Facilisi etiam dignissim' +
+            ' diam quis enim lobortis scelerisque fermentum.'
     };
 }
 
