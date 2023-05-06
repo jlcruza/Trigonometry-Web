@@ -110,6 +110,43 @@ function MakeGraph(excercise) {
 }
 
 
+async function MakeGraphSlow(excercise) {
+    for (let i = 0; i < 2 * Math.PI; i = i + steps) {
+
+        let container = document.createElement(element);
+        container.style.zIndex = zIndex;
+        container.classList.add("line-position");
+        container.classList.add("origin-vertical");
+        container.style.left = 0;
+
+        let dot = document.createElement(element);
+        dot.style.width = "3px";
+        dot.style.height = "3px";
+        dot.style.backgroundColor = color;
+        dot.style.position = "relative";
+        dot.classList.add("block");
+        dot.classList.add("line-position");
+        dot.classList.add("origin-horizontal");
+
+
+        container.style.marginTop = moveDotVertically(isNaN(excercise(i)) ? 100 : excercise(i));
+        dot.style.marginLeft = moveDotHorizontally(i);
+
+        // Code for Safari
+        dot.style.WebkitTransform = "rotate(-" + Math.atan(slope(i, excercise)) + "deg)";
+        // Code for IE9
+        dot.style.msTransform = "rotate(-" + Math.atan(slope(i, excercise)) + "deg)";
+        // Standard syntax
+        dot.style.transform = "rotate(-" + Math.atan(slope(i, excercise)) + "deg)";
+
+        container.appendChild(dot)
+        graph.push(container);
+        graphArea.appendChild(container);
+        await sleep(1)
+    }
+}
+
+
 function MakeAsymptote(f) {
     for (let i = -3; i < 3; i = i + steps) {
 

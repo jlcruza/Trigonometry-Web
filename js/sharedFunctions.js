@@ -17,3 +17,7 @@ function tangentGraph(x) { return Math.tan(x); }
 function cosecantGraph(x) { return 1 / Math.sin(x); }
 function secantGraph(x) { return 1 / Math.cos(x); }
 function cotangentGraph(x) { return 1 / Math.tan(x); }
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}

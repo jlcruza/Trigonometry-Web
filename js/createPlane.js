@@ -88,7 +88,7 @@ for (let i = -horizontalLines; i < horizontalLines + 1; i++) {
         let horizontal = document.createElement("LABEL");
         horizontal.classList.add("line-position");
         horizontal.classList.add("origin-vertical");
-        vertical.classList.add("big-graph-text");
+        horizontal.classList.add("big-graph-text");
         horizontal.classList.add("dark-text");
         horizontal.classList.add("no-word-wrap");
         horizontal.style.left = "53%";

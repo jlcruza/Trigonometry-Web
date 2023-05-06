@@ -1,3 +1,6 @@
+STEPS_LIST = ['']
+CURRENT_INDEX = 0;
+
 function onBackButtonPressed() {
     const homeBaseUrl = './index.html?type=';
     const type = getQueryStringType();
@@ -17,8 +20,13 @@ function setInformation(value){
     const informationDesk = document.getElementById('information-desktop');
     const informationMobl = document.getElementById('information-mobile');
 
-    informationDesk.innerHTML = value;
-    informationMobl.innerHTML = value;
+    if (CURRENT_INDEX > 0){
+        informationDesk.innerHTML = '\n' + value;
+        informationMobl.innerHTML = '\n' + value;    
+    } else{
+        informationDesk.innerHTML = value;
+        informationMobl.innerHTML = value;    
+    }
 }
 
 function getMainPageGraph() {
@@ -33,7 +41,7 @@ function getMainPageGraph() {
     if (type == sineKey) {
         equationText.innerText = "\\(f(x) = sin{(x)}\\)"
         setTitle('Seno');
-        MakeGraph(sineGraph);
+        return sineSteps()
     }
 
     else if (type == cosineKey) {
@@ -73,6 +81,26 @@ function getMainPageGraph() {
     }
 }
 
+async function nextMessage(){
+    setInformation(STEPS_LIST[CURRENT_INDEX])
+    CURRENT_INDEX++
+
+    if(STEPS_LIST.length == CURRENT_INDEX){
+        await MakeGraphSlow(sineGraph);
+        CURRENT_INDEX = 0;
+    }
+}
+
+function setClickAction(){
+    const informationDesk = document.getElementById('information-desktop');
+    const informationMobl = document.getElementById('information-mobile');
+
+    informationDesk.onclick = nextMessage
+    informationMobl.onclick = nextMessage
+}
+
+
 let btnBack = document.getElementById('back-button');
 btnBack.onclick = onBackButtonPressed;
-getMainPageGraph();
+STEPS_LIST = getMainPageGraph();
+setClickAction();
