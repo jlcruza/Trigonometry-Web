@@ -22,11 +22,6 @@
     align-items: center;
 }
 
-.square {
-    position: relative;
-    width: 50%;
-}
-
 .square::after {
     content: "";
     display: block;
@@ -54,8 +49,8 @@
     margin-top: 20%;
 }
 
-.card-size{
-    height: 70%;
+.card-size {
+    height: 70vh;
 }
 
 .white-background {
@@ -64,4 +59,42 @@
 
 .custom-card-footer {
     border-top: none;
+}
+
+/* For Mobile */
+@media (max-width: 992px) {
+    .square {
+        position: relative;
+        width: 70%;
+    }
+
+    #description-desktop {
+        display: none;
+    }
+
+    #description-mobile {
+        display: block;
+        padding: 5vw;
+        max-height: 30vh;
+    }
+
+    #information-mobile{
+        overflow-y: scroll;
+    }
+}
+
+/* For Desktop */
+@media (min-width: 992px) {
+    .square {
+        position: relative;
+        width: 54%;
+    }
+
+    #description-desktop {
+        display: block;
+    }
+
+    #description-mobile {
+        display: none;
+    }
 }

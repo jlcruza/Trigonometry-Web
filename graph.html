@@ -70,24 +70,34 @@
             <div class="row" style="height: 100%;">
                 
               <!-- Graph -->
-                <div class="col-12 col-lg-8 white-background">
+                <div class="col-12 col-lg-8 off-white-background">
                     <div id="graph-cell">
-                        <div id="graph-area" class="square">
+                        <div id="graph-area" class="square"></div>
+                        <p id="equation-text" class="dark-text bold-text">\(f(x) = sin{(x)}\)</p> 
+                        
+                        <div id="description-mobile">
+                          <div class="card shadow">
+                            <div class="card-body">
+                                <h5 id="title-mobile" class="card-title">Función Seno</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">&nbsp;</h6>
+                                <p id="information-mobile" class="card-text">Toque para comenzar.</p>
+                            </div>
+                            <div class="card-footer d-grid gap-2 col-12 mx-auto custom-card-footer">
+                                <button id="back-button" class="btn btn-lg btn-danger">Volver</button>
+                            </div>
                         </div>
-                        <p id="equation-text" class="dark-text bold-text">\(f(x) = sin{(x)}\)</p>    
+                        </div>
                     </div>
                 </div>
 
                 <!-- Description -->
-                <div class="col-12 col-lg-4">
+                <div id="description-desktop" class="col-12 col-lg-4">
                     <div id="description-area" class="card-size">
-                        <div class="card card-size">
+                        <div class="card shadow card-size">
                             <div class="card-body">
-                                <h5 class="card-title">Función Seno</h5>
+                                <h5 id="title-desktop" class="card-title">Función Seno</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">&nbsp;</h6>
-                                <p class="card-text">
-                                    Presione [Space Bar] para comenzar.
-                                </p>
+                                <p id="information-desktop" class="card-text">Presione [Space Bar] para comenzar.</p>
                             </div>
                             <div class="card-footer d-grid gap-2 col-12 mx-auto custom-card-footer">
                                 <button id="back-button" class="btn btn-lg btn-danger">Volver</button>

@@ -57,6 +57,10 @@ p {
     background-color: white;
 }
 
+.off-white-background{
+    background-color: #F5F5F5;
+}
+
 .green-background {
     /* https://gradient.shapefactory.co/?a=063841&b=00D082&d=25 */
     background-image: linear-gradient(25deg, #063841, #116757, #139a6c, #00d082)
